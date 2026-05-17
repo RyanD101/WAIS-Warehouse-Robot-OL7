@@ -9,8 +9,10 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.1932707361836668 0.1991598399559153 0.960719407883362 1.580867945468355
-  position -0.0238446439627141 -8.596927336451552 3.604537231835548
+  orientation 0.001977332218925673 -0.9999754192540954 -0.006726889689330685 5.7248763762787345
+  position -6.13634207123314 0.10821966200402927 3.6606876806530915
+  follow "e-puck"
+  followType "None"
 }
 TexturedBackground {
 }
@@ -23,5 +25,299 @@ RectangleArena {
   }
 }
 E-puck {
+  hidden position_0_0 132.88021752631403
+  hidden position_0_1 132.88021752630894
+  hidden rotation_1 0 -0.9999999999999999 0 5.349859231636875
+  hidden rotation_2 0 -0.9999999999999999 0 5.349859231641963
+  translation -1.92765 0.17254 -0.00240742
+  rotation 1.642143493153953e-06 -0.9999999999858541 -5.0591650736371556e-06 0.0008254475504806062
   controller "wais_controller"
+  camera_fieldOfView 1.2
+  camera_width 68
+  camera_height 46
+}
+Solid {
+  translation -0.37 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 2"
+}
+Solid {
+  translation 0.13 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 3"
+}
+Solid {
+  translation 0.48 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 4"
+}
+Solid {
+  translation 0.9 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 5"
+}
+Solid {
+  translation 1.44 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 6"
+}
+Solid {
+  translation 0.31 0.05 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 3"
+}
+Solid {
+  translation 0.76 0.05 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 4"
+}
+Solid {
+  translation 1.23 0.05 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 5"
+}
+Solid {
+  translation -0.98 0.29 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 1"
+}
+Solid {
+  translation -1.04 0.05 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 1"
+}
+Solid {
+  translation -0.52 0.05 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 2"
+}
+Solid {
+  translation 0.03 0.35 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "left shelf 1"
+}
+Solid {
+  translation 0.03 0.75 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "left shelf 2"
+}
+Solid {
+  translation 0.03 1.15 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "left shelf 3"
+}
+Solid {
+  translation 0.03 1.55 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "left shelf 4"
+}
+Solid {
+  translation 0.03 -0.01 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "right shelf 1"
+}
+Solid {
+  translation 0.03 -0.41 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "right shelf 2"
+}
+Solid {
+  translation 0.03 -0.81 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "right shelf 3"
+}
+Solid {
+  translation 0.03 -1.21 0.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25098 0.25098 0.25098
+        metalness 0
+      }
+      geometry Box {
+        size 3 0.1 0.3
+      }
+    }
+  ]
+  name "right shelf 4"
 }

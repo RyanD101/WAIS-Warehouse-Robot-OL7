@@ -1,59 +1,92 @@
 from controller import Robot
-
-TIME_STEP = 64
-MAX_SPEED = 6.28
+import navigation
+import perception
 
 robot = Robot()
+timestep = int(robot.getBasicTimeStep())
 
-# Motors
-left_motor = robot.getDevice("left wheel motor")
-right_motor = robot.getDevice("right wheel motor")
+# FSM states
+EXPLORE = "EXPLORE"
+AVOID_OBSTACLE = "AVOID_OBSTACLE"
+TARGET_DETECTED = "TARGET_DETECTED"
+RECOVERY = "RECOVERY"
 
-left_motor.setPosition(float("inf"))
-right_motor.setPosition(float("inf"))
+state = EXPLORE
 
-left_motor.setVelocity(0.0)
-right_motor.setVelocity(0.0)
+navigation.setup(robot, timestep)
+perception.setup(robot, timestep)
 
-# Proximity sensors
-ps_names = ["ps0", "ps1", "ps2", "ps3", "ps4", "ps5", "ps6", "ps7"]
-ps = []
+inventory_count = 0
+recovery_counter = 0
+last_print_time = 0
 
-for name in ps_names:
-    sensor = robot.getDevice(name)
-    sensor.enable(TIME_STEP)
-    ps.append(sensor)
+currently_detecting = False
+no_detection_counter = 0
+last_logged_colour = None
 
-def set_motor_speeds(left_speed, right_speed):
-    left_motor.setVelocity(left_speed)
-    right_motor.setVelocity(right_speed)
+print("Controller started")
 
-def read_proximity():
-    return [sensor.getValue() for sensor in ps]
+while robot.step(timestep) != -1:
 
-def detect_obstacle(values):
-    right_obstacle = values[0] > 80 or values[1] > 80 or values[2] > 80
-    left_obstacle = values[5] > 80 or values[6] > 80 or values[7] > 80
-    return left_obstacle, right_obstacle
+    colour = perception.detect_inventory_marker()
+    obstacle = navigation.obstacle_detected()
+    if obstacle:
+        colour = None
 
-while robot.step(TIME_STEP) != -1:
-    ps_values = read_proximity()
-    left_obstacle, right_obstacle = detect_obstacle(ps_values)
+    current_time = robot.getTime()
 
-    left_speed = 0.5 * MAX_SPEED
-    right_speed = 0.5 * MAX_SPEED
+    if colour is None:
+        no_detection_counter += 1
+    else:
+        no_detection_counter = 0
 
-    if left_obstacle:
-        print("Obstacle left → turning right")
-        left_speed = 0.5 * MAX_SPEED
-        right_speed = -0.5 * MAX_SPEED
+    if no_detection_counter > 30:
+        currently_detecting = False
+        last_logged_colour = None
 
-    elif right_obstacle:
-        print("Obstacle right → turning left")
-        left_speed = -0.5 * MAX_SPEED
-        right_speed = 0.5 * MAX_SPEED
+    if recovery_counter > 40:
+        state = RECOVERY
+
+    elif obstacle:
+        state = AVOID_OBSTACLE
+
+    elif colour is not None:
+        state = TARGET_DETECTED
 
     else:
-        print("EXPLORE")
+        state = EXPLORE
 
-    set_motor_speeds(left_speed, right_speed)
+    if current_time - last_print_time > 0.5:
+        print("State:", state)
+        last_print_time = current_time
+
+    if state == EXPLORE:
+
+        navigation.move_forward()
+        recovery_counter = 0
+        perception.reset_confirmation()
+
+    elif state == AVOID_OBSTACLE:
+
+        navigation.avoid_obstacle()
+        recovery_counter += 1
+        perception.reset_confirmation()
+
+    elif state == TARGET_DETECTED:
+
+        navigation.move_forward()
+    
+        inventory_count += 1
+    
+        print("Logged item:", colour)
+        print("Inventory count:", inventory_count)
+    
+    elif state == RECOVERY:
+
+        print("Recovery behaviour")
+
+        navigation.reverse()
+        navigation.turn_right()
+
+        recovery_counter = 0
+        perception.reset_confirmation()
