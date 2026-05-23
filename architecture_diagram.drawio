@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3.1 Safari/605.1.15">
+  <diagram name="Page-1" id="R3g_qRsygwZnC7CexNEq">
+    <mxGraphModel dx="1053" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="820" x="3.5" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="820" x="3.5" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="600" x="112" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" value="&lt;b&gt;Sense&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;text-align: start; white-space: nowrap; font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;Raw inputs from the e-puck hardware&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="256" x="284" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-6" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DyHuzq5_tju0pxG4OgEs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="8x Infrared proximity sensors" vertex="1">
+          <mxGeometry height="60" width="170" x="328" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="RGB Camera (68 x 46)" vertex="1">
+          <mxGeometry height="60" width="170" x="129" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Wheel encoders" vertex="1">
+          <mxGeometry height="60" width="170" x="529" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-8" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=0.454;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="DyHuzq5_tju0pxG4OgEs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;&lt;b&gt;Process&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Python modules&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="256" x="285" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-7" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="DyHuzq5_tju0pxG4OgEs-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="302" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-27" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DyHuzq5_tju0pxG4OgEs-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;navigation.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Threshold evaluation | sensors function | obstacle flag&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="233" x="297" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-26" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="DyHuzq5_tju0pxG4OgEs-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;perception.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Pixel scan | hysteresis thresholds | colour flag&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="233" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-28" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="DyHuzq5_tju0pxG4OgEs-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;grid_mapper.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dead-reckoning pose | visited cells | direction&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="233" x="560" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" value="&lt;div&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Decide&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap; color: rgb(255, 255, 255);&quot;&gt;wais_controller.py — FSM priority:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap; color: rgb(255, 255, 255);&quot;&gt;RECOVERY → AVOID → DETECT → EXPLORE&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="334.5" x="244.75" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="EXPLORE&lt;div&gt;&lt;br&gt;&lt;div&gt;Grid-guided movement&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="10" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="AVOID&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sensor &amp;gt; 80 threshold&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="220" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" value="TARGET&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Colour confirmed&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="430" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" value="RECOVERY&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Counter &amp;gt; 40 steps&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="630" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;text-align: start; white-space: nowrap; font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;No threat / no target&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="65" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;text-align: start; white-space: nowrap; font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;obstacle detected&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="275" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;text-align: start; white-space: nowrap; font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;Colour + no obstacle&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="485" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;text-align: start; white-space: nowrap; font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif;&quot;&gt;Stuck &amp;nbsp;escape&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="695" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="820" x="3" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="Differential drive&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;forward / return / reverse&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="10" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="Advanced motor cmd&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;turn away from threat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="290" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" value="Console inventory log&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;count | colour | state&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="570" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-34" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.564;exitY=0.985;exitDx=0;exitDy=0;entryX=0.546;entryY=-0.018;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="DyHuzq5_tju0pxG4OgEs-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-35" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.595;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" target="DyHuzq5_tju0pxG4OgEs-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-37" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.424;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;" target="DyHuzq5_tju0pxG4OgEs-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font&gt;&lt;span style=&quot;caret-color: rgb(255, 255, 255); color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;Act&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;caret-color: rgb(255, 255, 255); color: rgb(0, 0, 0);&quot;&gt;Motor commands and logging outputs&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="219.25" x="303.37" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-39" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DyHuzq5_tju0pxG4OgEs-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="650" as="sourcePoint" />
+            <mxPoint x="402" y="793" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" value="&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;&lt;font&gt;Safety and robustness mechanisms&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Camera None guard → graceful degrade to navigation only&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Obstacle flag overrides colour detection during avoidance&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;30-step no-detection timeout resets last_logged_colour&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Multi-frame hysteresis suppresses false positives (ON/OFF thresholds)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-width: normal; font-size: 13px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-variant-emoji: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="820" x="2" y="890" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
