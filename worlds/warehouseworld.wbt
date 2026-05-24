@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.001977332218925673 -0.9999754192540954 -0.006726889689330685 5.7248763762787345
-  position -6.13634207123314 0.10821966200402927 3.6606876806530915
+  orientation -0.05149783202888213 -0.8876261239900255 0.4576765640785739 6.030494897481426
+  position -3.848068199606108 0.2777585589904299 0.9351890782376436
   follow "e-puck"
   followType "None"
 }
@@ -19,22 +19,29 @@ TexturedBackground {
 TexturedBackgroundLight {
 }
 RectangleArena {
-  floorSize 5 5
+  translation 0 0.77 0
+  floorSize 5 2
   floorAppearance Parquetry {
     type "light strip"
   }
 }
 E-puck {
-  hidden position_0_0 132.88021752631403
-  hidden position_0_1 132.88021752630894
-  hidden rotation_1 0 -0.9999999999999999 0 5.349859231636875
-  hidden rotation_2 0 -0.9999999999999999 0 5.349859231641963
-  translation -1.92765 0.17254 -0.00240742
-  rotation 1.642143493153953e-06 -0.9999999999858541 -5.0591650736371556e-06 0.0008254475504806062
+  hidden position_0_0 1064.8025977153977
+  hidden position_0_1 1074.8347890966882
+  hidden translation_1 0 0.025999999999999992 0.02
+  hidden rotation_1 0 -1 0 3.3389045051319775
+  hidden translation_2 0 -0.02599999999999999 0.02
+  hidden rotation_2 0 -1 0 5.873083738200719
+  translation -1.93 0.173 -6.39596e-05
+  rotation 0.00024280846676017016 -0.20091177575364866 0.9796093095757942 0.0024683977525282318
   controller "wais_controller"
   camera_fieldOfView 1.2
   camera_width 68
   camera_height 46
+  groundSensorsSlot [
+    GPS {
+    }
+  ]
 }
 Solid {
   translation -0.37 0.29 0.05
@@ -80,6 +87,21 @@ Solid {
     }
   ]
   name "Red Marker 4"
+}
+Solid {
+  translation 0.48 1.09 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Red Marker 4(1)"
 }
 Solid {
   translation 0.9 0.29 0.05
@@ -202,6 +224,21 @@ Solid {
   name "Green Marker 2"
 }
 Solid {
+  translation -0.52 0.4 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 0.03 0.08
+      }
+    }
+  ]
+  name "Green Marker 2(1)"
+}
+Solid {
   translation 0.03 0.35 0.15
   children [
     Shape {
@@ -275,49 +312,4 @@ Solid {
     }
   ]
   name "right shelf 1"
-}
-Solid {
-  translation 0.03 -0.41 0.15
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.25098 0.25098 0.25098
-        metalness 0
-      }
-      geometry Box {
-        size 3 0.1 0.3
-      }
-    }
-  ]
-  name "right shelf 2"
-}
-Solid {
-  translation 0.03 -0.81 0.15
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.25098 0.25098 0.25098
-        metalness 0
-      }
-      geometry Box {
-        size 3 0.1 0.3
-      }
-    }
-  ]
-  name "right shelf 3"
-}
-Solid {
-  translation 0.03 -1.21 0.15
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.25098 0.25098 0.25098
-        metalness 0
-      }
-      geometry Box {
-        size 3 0.1 0.3
-      }
-    }
-  ]
-  name "right shelf 4"
 }
