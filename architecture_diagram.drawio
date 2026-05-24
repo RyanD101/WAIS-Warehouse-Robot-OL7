@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3.1 Safari/605.1.15">
   <diagram name="Page-1" id="R3g_qRsygwZnC7CexNEq">
-    <mxGraphModel dx="1053" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="911" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,7 +25,7 @@
         <mxCell id="DyHuzq5_tju0pxG4OgEs-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="RGB Camera (68 x 46)" vertex="1">
           <mxGeometry height="60" width="170" x="129" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="DyHuzq5_tju0pxG4OgEs-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Wheel encoders" vertex="1">
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="GPS sensor" vertex="1">
           <mxGeometry height="60" width="170" x="529" y="110" as="geometry" />
         </mxCell>
         <mxCell id="DyHuzq5_tju0pxG4OgEs-8" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=0.454;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" target="DyHuzq5_tju0pxG4OgEs-4">
@@ -54,13 +54,13 @@
         <mxCell id="DyHuzq5_tju0pxG4OgEs-28" edge="1" parent="1" source="DyHuzq5_tju0pxG4OgEs-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="DyHuzq5_tju0pxG4OgEs-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DyHuzq5_tju0pxG4OgEs-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;grid_mapper.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Dead-reckoning pose | visited cells | direction&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;grid_mapper.py&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Waypoint tracking | visited points | direction&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="233" x="560" y="330" as="geometry" />
         </mxCell>
         <mxCell id="DyHuzq5_tju0pxG4OgEs-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" value="&lt;div&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;Decide&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap; color: rgb(255, 255, 255);&quot;&gt;wais_controller.py — FSM priority:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0); font-family: &amp;quot;Anthropic Sans&amp;quot;, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, sans-serif; text-align: start; white-space: nowrap; color: rgb(255, 255, 255);&quot;&gt;RECOVERY → AVOID → DETECT → EXPLORE&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="334.5" x="244.75" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="DyHuzq5_tju0pxG4OgEs-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="EXPLORE&lt;div&gt;&lt;br&gt;&lt;div&gt;Grid-guided movement&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="DyHuzq5_tju0pxG4OgEs-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="EXPLORE&lt;div&gt;&lt;br&gt;&lt;div&gt;Waypoint guided movement&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="170" x="10" y="570" as="geometry" />
         </mxCell>
         <mxCell id="DyHuzq5_tju0pxG4OgEs-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="AVOID&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sensor &amp;gt; 80 threshold&lt;/div&gt;" vertex="1">
